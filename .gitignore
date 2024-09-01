@@ -160,4 +160,4 @@ cython_debug/
 #.idea/
 
 # Document folder temporary
-backend/core/tmp
+backend/core/temporary
