@@ -1,6 +1,16 @@
 version: "3.8"
 
 services:
+  cassandra:
+    image: cassandra:latest
+    container_name: cassandra-container
+    ports:
+      - "9042:9042"
+    environment:
+      - CASSANDRA_USER=admin
+      - CASSANDRA_PASSWORD=admin
+    volumes:
+      - cassandra-data:/var/lib/cassandra
   typesense:
       image: typesense/typesense:27.0
       restart: on-failure
@@ -12,3 +22,4 @@ services:
 
 volumes:
   typesense_data:
+  cassandra-data:
