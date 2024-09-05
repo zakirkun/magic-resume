@@ -161,3 +161,4 @@ cython_debug/
 
 # Document folder temporary
 backend/core/temporary
+node_modules/
