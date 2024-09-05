@@ -15,8 +15,5 @@ services:
       ports:
         - "8108:8108"
       volumes:
-        - typesense_data:/data
+        - ./typesense-data:/data
       command: '--data-dir /data --api-key=magic1337 --enable-cors'  
-
-volumes:
-  typesense_data:
