@@ -30,6 +30,7 @@ services:
     ports:
       - "8000:8000"
   typesense:
+      container_name: typesense
       image: typesense/typesense:27.0
       restart: on-failure
       ports:
