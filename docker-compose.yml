@@ -13,12 +13,16 @@ services:
       - 443:443
     depends_on:
       - backend
-      - frontend
-  frontend:
-    container_name: frontend
-    restart: on-failure
-    ports:
-      - "3000:3000"
+      # - frontend
+  # frontend:
+  #   container_name: frontend
+  #   image: mohamedryad/nextjs-app:v1
+  #   # build:
+  #   #   context: ./frontend
+  #   #   dockerfile: Dockerfile
+  #   restart: on-failure
+  #   ports:
+  #     - "3000:3000"
   backend:
     container_name: backend
     build:

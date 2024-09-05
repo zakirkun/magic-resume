@@ -163,3 +163,4 @@ cython_debug/
 backend/core/temporary
 node_modules/
 etl/
+# typesense-data/
