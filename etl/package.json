@@ -9,12 +9,12 @@
   "author": "Zakir",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.2",
+    "body-parser": "^1.20.3",
     "convert-csv-to-json": "^2.48.0",
     "cors": "^2.8.5",
     "csv-parser": "^3.0.0",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2",
+    "express": "^4.21.0",
     "typesense": "^1.8.2"
   }
 }
